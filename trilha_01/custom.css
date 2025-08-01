@@ -1,0 +1,7 @@
+.theme-switch-button, .toggle-theme {
+  display: none !important;
+}
+
+.sidebar-search {
+  display: none !important;
+}

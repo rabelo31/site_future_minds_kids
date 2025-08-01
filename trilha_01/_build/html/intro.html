@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Metodologia L.I.G.A. – Aprender Fazendo, Liderar Transformando &#8212; Trilha de Aprendizado</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Liderança: Formação de Protagonistas para um Futuro Transformador" href="Lideran%C3%A7a.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Trilha de Aprendizado - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Trilha de Aprendizado - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Metodologia L.I.G.A. – Aprender Fazendo, Liderar Transformando
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lideran%C3%A7a.html"><strong>Liderança:</strong> Formação de Protagonistas para um Futuro Transformador</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inova%C3%A7%C3%A3o.html"><strong>Inovação:</strong> Estimulando a Criatividade e a Solução de Problemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Gest%C3%A3o.html"><strong>Gestão:</strong> Organizar, Planejar e Agir com Consciência</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Atitude.html">Atitude</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Metodologia L.I.G.A. – Aprender Fazendo, Liderar Transformando</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-que-e-a-l-i-g-a">O que é a L.I.G.A.?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-lideranca-com-proposito">L • Liderança com Propósito</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-inovacao-criativa">I • Inovação Criativa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-gestao-de-si-e-do-coletivo">G • Gestão de Si e do Coletivo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-atitude-e-aplicacao-social">A • Atitude e Aplicação Social</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-acontece-na-pratica">Como acontece na prática?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componentes-da-trilha">Componentes da Trilha</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-funciona">Por que funciona?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#competencias-desenvolvidas">Competências Desenvolvidas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avaliacao-formativa-e-reflexiva">Avaliação Formativa e Reflexiva</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-avaliacao-e-vista-como-parte-do-proprio-aprendizado">A avaliação é vista como parte do próprio aprendizado:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formacao-de-educadores">Formação de Educadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prontos-para-despertar-o-protagonismo-em-cada-aluno">Prontos para despertar o protagonismo em cada aluno?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="metodologia-l-i-g-a-aprender-fazendo-liderar-transformando">
+<h1><strong>Metodologia L.I.G.A. –</strong> Aprender Fazendo, Liderar Transformando<a class="headerlink" href="#metodologia-l-i-g-a-aprender-fazendo-liderar-transformando" title="Link to this heading">#</a></h1>
+<p>A Metodologia L.I.G.A. é o coração da Future Minds Kids. Inspirada nas metodologias ativas de ensino e ancorada na abordagem STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática), ela foi desenvolvida especialmente para a realidade educacional brasileira. Nosso objetivo é claro: formar jovens autônomos, criativos e éticos, preparados para transformar o mundo com coragem, consciência e propósito.</p>
+<section id="o-que-e-a-l-i-g-a">
+<h2>O que é a L.I.G.A.?<a class="headerlink" href="#o-que-e-a-l-i-g-a" title="Link to this heading">#</a></h2>
+<p>A sigla L.I.G.A. representa os quatro eixos formativos que estruturam nossa proposta pedagógica:</p>
+<section id="l-lideranca-com-proposito">
+<h3>L • Liderança com Propósito<a class="headerlink" href="#l-lideranca-com-proposito" title="Link to this heading">#</a></h3>
+<p>Estimulamos o protagonismo desde cedo. Nossos alunos são convidados a assumir responsabilidades, tomar decisões com empatia e agir com visão de futuro. Liderar aqui é servir, inspirar e cooperar.</p>
+</section>
+<section id="i-inovacao-criativa">
+<h3>I • Inovação Criativa<a class="headerlink" href="#i-inovacao-criativa" title="Link to this heading">#</a></h3>
+<p>Tecnologia é meio, não fim. Trabalhamos com ferramentas digitais, programação e robótica para resolver problemas reais. O foco está na criatividade aplicada, no pensamento crítico e na capacidade de imaginar soluções que gerem impacto positivo.</p>
+</section>
+<section id="g-gestao-de-si-e-do-coletivo">
+<h3>G • Gestão de Si e do Coletivo<a class="headerlink" href="#g-gestao-de-si-e-do-coletivo" title="Link to this heading">#</a></h3>
+<p>Acreditamos na importância de planejar, organizar e colaborar. Ensinamos habilidades de gestão do tempo, autoconhecimento, trabalho em equipe e planejamento de projetos, formando jovens mais conscientes, responsáveis e participativos.</p>
+</section>
+<section id="a-atitude-e-aplicacao-social">
+<h3>A • Atitude e Aplicação Social<a class="headerlink" href="#a-atitude-e-aplicacao-social" title="Link to this heading">#</a></h3>
+<p>Cada conhecimento precisa fazer sentido e gerar ação. Por isso, promovemos projetos com propósito, conectando teoria e prática. Os estudantes se envolvem com desafios do mundo real e desenvolvem soluções que melhoram sua comunidade.</p>
+</section>
+</section>
+<section id="como-acontece-na-pratica">
+<h2>Como acontece na prática?<a class="headerlink" href="#como-acontece-na-pratica" title="Link to this heading">#</a></h2>
+<p>A L.I.G.A. se concretiza por meio de trilhas formativas integradas, que combinam tecnologia, artes, ciências e habilidades socioemocionais. As oficinas são dinâmicas, mão na massa e voltadas para o desenvolvimento de competências essenciais do século XXI.</p>
+</section>
+<section id="componentes-da-trilha">
+<h2>Componentes da Trilha<a class="headerlink" href="#componentes-da-trilha" title="Link to this heading">#</a></h2>
+<p><strong>Robótica Educacional:</strong> montagem, programação e resolução de desafios técnicos e criativos</p>
+<p><strong>Programação Criativa:</strong> uso de linguagens visuais e textuais para criação de jogos, histórias e soluções digitais</p>
+<p><strong>Projetos STEAM:</strong> integração entre ciências, matemática, artes e tecnologia em desafios interdisciplinares</p>
+<p><strong>Inglês Aplicado:</strong> uso funcional da língua inglesa em contextos reais e tecnológicos</p>
+<p><strong>Soft Skills:</strong> liderança, empatia, comunicação, escuta, colaboração e pensamento crítico</p>
+</section>
+<section id="por-que-funciona">
+<h2>Por que funciona?<a class="headerlink" href="#por-que-funciona" title="Link to this heading">#</a></h2>
+<p>Porque coloca o estudante no centro do processo. A metodologia L.I.G.A. valoriza a vivência, o erro como parte do aprendizado e o fazer como caminho para compreender. Cada projeto é um convite à ação, à autoria e à transformação — pessoal e coletiva.</p>
+<p>Além disso, ela é flexível e adaptável. Pode ser aplicada em diferentes contextos escolares e sociais, respeitando a diversidade e os recursos de cada comunidade. Nossa missão é formar uma nova geração que pense com lógica, sinta com empatia e aja com propósito. L.I.G.A. é mais que uma metodologia. É uma preparação viva para o mundo real.</p>
+</section>
+<section id="competencias-desenvolvidas">
+<h2>Competências Desenvolvidas<a class="headerlink" href="#competencias-desenvolvidas" title="Link to this heading">#</a></h2>
+<p>Na Metodologia L.I.G.A., as competências não são ensinadas de forma isolada — elas emergem da prática, dos desafios e das interações significativas. O processo de aprendizagem é construído com base em experiências reais, onde os alunos desenvolvem:</p>
+<p><strong>Autonomia intelectual:</strong> pensar, decidir e aprender por si mesmos.</p>
+<p><strong>Colaboração eficaz:</strong> ouvir, contribuir e cocriar em grupo.</p>
+<p><strong>Comunicação consciente:</strong> expressar ideias com clareza, escutar com empatia.</p>
+<p><strong>Consciência ética:</strong> agir com responsabilidade e respeito.</p>
+<p><strong>Resolução criativa de problemas:</strong> experimentar, testar, refinar soluções.</p>
+<p><strong>Visão de mundo ampliada:</strong> compreender contextos sociais, culturais e tecnológicos.</p>
+</section>
+<section id="avaliacao-formativa-e-reflexiva">
+<h2>Avaliação Formativa e Reflexiva<a class="headerlink" href="#avaliacao-formativa-e-reflexiva" title="Link to this heading">#</a></h2>
+<p>O foco da avaliação na L.I.G.A. não está em notas, mas em progresso. O aprendizado é acompanhado por meio de observações, portfólios, autoavaliações e feedbacks contínuos. O aluno é incentivado a refletir sobre seu processo, identificar pontos de melhoria e celebrar avanços concretos.</p>
+<section id="a-avaliacao-e-vista-como-parte-do-proprio-aprendizado">
+<h3>A avaliação é vista como parte do próprio aprendizado:<a class="headerlink" href="#a-avaliacao-e-vista-como-parte-do-proprio-aprendizado" title="Link to this heading">#</a></h3>
+<p>O erro é entendido como ferramenta de crescimento.</p>
+<p>O feedback é constante, claro e construtivo.</p>
+<p>A reflexão é parte ativa das atividades.</p>
+<p>O professor atua como mentor e facilitador, não apenas como avaliador.</p>
+</section>
+</section>
+<section id="formacao-de-educadores">
+<h2>Formação de Educadores<a class="headerlink" href="#formacao-de-educadores" title="Link to this heading">#</a></h2>
+<p>Para que a Metodologia L.I.G.A. se concretize plenamente, é essencial a formação de educadores conscientes, criativos e alinhados com essa proposta transformadora. Por isso, oferecemos formações continuadas que capacitam os profissionais para:</p>
+<p>Aplicar a abordagem STEAM com intencionalidade pedagógica.</p>
+<p>Mediar projetos interdisciplinares com foco em protagonismo estudantil.</p>
+<p>Trabalhar competências socioemocionais com profundidade e sensibilidade.</p>
+<p>Adaptar os conteúdos às realidades locais e aos ritmos dos estudantes.</p>
+<p>A formação do educador é parte vital da L.I.G.A. — porque ensinar com propósito começa por quem ensina.</p>
+</section>
+<section id="prontos-para-despertar-o-protagonismo-em-cada-aluno">
+<h2>Prontos para despertar o protagonismo em cada aluno?<a class="headerlink" href="#prontos-para-despertar-o-protagonismo-em-cada-aluno" title="Link to this heading">#</a></h2>
+<p>Na próxima seção, vamos mergulhar no primeiro pilar da nossa metodologia: Liderança. Entenda como formamos jovens capazes de pensar com empatia, agir com responsabilidade e inspirar mudanças reais no mundo ao seu redor!</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="Lideran%C3%A7a.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Liderança:</strong> Formação de Protagonistas para um Futuro Transformador</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-que-e-a-l-i-g-a">O que é a L.I.G.A.?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-lideranca-com-proposito">L • Liderança com Propósito</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-inovacao-criativa">I • Inovação Criativa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-gestao-de-si-e-do-coletivo">G • Gestão de Si e do Coletivo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-atitude-e-aplicacao-social">A • Atitude e Aplicação Social</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-acontece-na-pratica">Como acontece na prática?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componentes-da-trilha">Componentes da Trilha</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-funciona">Por que funciona?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#competencias-desenvolvidas">Competências Desenvolvidas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avaliacao-formativa-e-reflexiva">Avaliação Formativa e Reflexiva</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-avaliacao-e-vista-como-parte-do-proprio-aprendizado">A avaliação é vista como parte do próprio aprendizado:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formacao-de-educadores">Formação de Educadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prontos-para-despertar-o-protagonismo-em-cada-aluno">Prontos para despertar o protagonismo em cada aluno?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Future Minds Kids
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
