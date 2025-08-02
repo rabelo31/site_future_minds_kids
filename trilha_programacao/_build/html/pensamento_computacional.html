@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introdução ao Pensamento Computacional &#8212; Trilha de Aprendizado Programação</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=1efb5dd8" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pensamento_computacional';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Algoritmos Desplugados" href="algoritmos_desplugados.html" />
+    <link rel="prev" title="Trilha de Aprendizado: Programação" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Trilha de Aprendizado Programação - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Trilha de Aprendizado Programação - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Trilha de Aprendizado: Programação
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introdução ao Pensamento Computacional</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="algoritmos_desplugados.html">Algoritmos Desplugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estruturas_logicas.html">Estruturas Lógicas e Condicionais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jogos_atividades.html">Jogos e Atividades em Grupo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projetos_praticos.html">Projetos Práticos</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/pensamento_computacional.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introdução ao Pensamento Computacional</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introdução ao Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-que-e-pensamento-computacional">O que é Pensamento Computacional?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beneficios-principais">Benefícios Principais</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pilares-estruturais-do-pensamento-computacional">Pilares Estruturais do Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposicao">1. Decomposição</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reconhecimento-de-padroes">2. Reconhecimento de Padrões</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstracao">3. Abstração</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmos">4. Algoritmos</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacoes-praticas-do-pensamento-computacional">Aplicações Práticas do Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-1-instrucoes-para-um-robo">Exercício 1: Instruções para um Robô</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-2-identificacao-de-padroes">Exercício 2: Identificação de Padrões</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-3-divisao-de-tarefas-complexas">Exercício 3: Divisão de Tarefas Complexas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introducao-ao-pensamento-computacional">
+<h1>Introdução ao Pensamento Computacional<a class="headerlink" href="#introducao-ao-pensamento-computacional" title="Link to this heading">#</a></h1>
+<section id="o-que-e-pensamento-computacional">
+<h2>O que é Pensamento Computacional?<a class="headerlink" href="#o-que-e-pensamento-computacional" title="Link to this heading">#</a></h2>
+<p>Pensamento Computacional é a habilidade de organizar o pensamento de forma lógica e estratégica para resolver problemas e criar soluções, independente do uso de computadores. O método estruturado baseia-se em técnicas que permitem analisar desafios complexos, identificar soluções eficientes e implementá-las de forma sistemática. Não exige conhecimentos prévios em tecnologia.</p>
+</section>
+<section id="beneficios-principais">
+<h2>Benefícios Principais<a class="headerlink" href="#beneficios-principais" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Eficiência na resolução de problemas:</strong> Transforma questões complexas em partes gerenciáveis.</p></li>
+<li><p><strong>Clareza de raciocínio:</strong> Elimina ambiguidades ao estruturar o pensamento.</p></li>
+<li><p><strong>Tomada de decisão aprimorada:</strong> Facilita a identificação de padrões e relações causais.</p></li>
+<li><p><strong>Criatividade aplicada:</strong> Incentiva soluções inovadoras dentro de um framework lógico.</p></li>
+</ul>
+<p>Em suma, o pensamento computacional estimula autonomia, pensamento crítico e consciência do impacto das escolhas.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pilares-estruturais-do-pensamento-computacional">
+<h1>Pilares Estruturais do Pensamento Computacional<a class="headerlink" href="#pilares-estruturais-do-pensamento-computacional" title="Link to this heading">#</a></h1>
+<section id="decomposicao">
+<h2>1. Decomposição<a class="headerlink" href="#decomposicao" title="Link to this heading">#</a></h2>
+<p>Quebrar um problema em subproblemas menores e mais tratáveis. Isso facilita o entendimento e a resolução, permitindo focar em etapas específicas de forma organizada.</p>
+<p><strong>Exemplo:</strong><br />
+Organizar uma viagem envolve definir separadamente o destino, o transporte, a hospedagem e o roteiro.</p>
+</section>
+<section id="reconhecimento-de-padroes">
+<h2>2. Reconhecimento de Padrões<a class="headerlink" href="#reconhecimento-de-padroes" title="Link to this heading">#</a></h2>
+<p>Identificar regularidades ou repetições para generalizar soluções. Reconhecer padrões permite aplicar estratégias eficientes a problemas semelhantes, economizando tempo e esforço.</p>
+<p><strong>Exemplo:</strong><br />
+Notar que certos tipos de problemas matemáticos seguem a mesma lógica de resolução, o que ajuda a resolver outros problemas similares.</p>
+</section>
+<section id="abstracao">
+<h2>3. Abstração<a class="headerlink" href="#abstracao" title="Link to this heading">#</a></h2>
+<p>Isolar os elementos essenciais, ignorando detalhes irrelevantes. A abstração simplifica o problema, concentrando-se apenas no que importa para a solução.</p>
+<p><strong>Exemplo:</strong><br />
+Em um mapa, as ruas são representadas como linhas e os pontos de interesse como símbolos, descartando informações supérfluas que não ajudam na orientação.</p>
+</section>
+<section id="algoritmos">
+<h2>4. Algoritmos<a class="headerlink" href="#algoritmos" title="Link to this heading">#</a></h2>
+<p>Criar sequências lógicas de passos para atingir um objetivo. Um algoritmo deve ser claro, preciso e seguir uma ordem que garanta o resultado esperado.</p>
+<p><strong>Exemplo:</strong><br />
+Uma receita culinária é um algoritmo: se seguida corretamente, produz o prato desejado, pois define passo a passo o procedimento necessário.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="aplicacoes-praticas-do-pensamento-computacional">
+<h1>Aplicações Práticas do Pensamento Computacional<a class="headerlink" href="#aplicacoes-praticas-do-pensamento-computacional" title="Link to this heading">#</a></h1>
+<section id="exercicio-1-instrucoes-para-um-robo">
+<h2>Exercício 1: Instruções para um Robô<a class="headerlink" href="#exercicio-1-instrucoes-para-um-robo" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Demonstrar a precisão necessária em algoritmos.</p>
+<p><strong>Execução:</strong></p>
+<ul class="simple">
+<li><p>Um participante descreve por escrito como escovar os dentes, passo a passo.</p></li>
+<li><p>Outro participante age como “robô”, executando as instruções literalmente.</p></li>
+<li><p>Erros (exemplo: “movimentar a escova” sem especificar direção) revelam falhas na lógica.</p></li>
+</ul>
+</section>
+<section id="exercicio-2-identificacao-de-padroes">
+<h2>Exercício 2: Identificação de Padrões<a class="headerlink" href="#exercicio-2-identificacao-de-padroes" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Treinar a detecção de regularidades.</p>
+<p><strong>Materiais:</strong> Sequências de cores, formas ou números (exemplo: 🔴–🔵–🔴–🔵–?).</p>
+<p><strong>Tarefa:</strong> Completar a sequência e justificar a escolha com base no padrão identificado.</p>
+</section>
+<section id="exercicio-3-divisao-de-tarefas-complexas">
+<h2>Exercício 3: Divisão de Tarefas Complexas<a class="headerlink" href="#exercicio-3-divisao-de-tarefas-complexas" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Aplicar decomposição em cenários reais.</p>
+<p><strong>Exemplo:</strong> Preparar um jantar pode ser dividido em etapas:</p>
+<ul class="simple">
+<li><p>Definir cardápio</p></li>
+<li><p>Comprar ingredientes</p></li>
+<li><p>Cozinhar cada prato</p></li>
+<li><p>Organizar a mesa</p></li>
+</ul>
+<p>Cada etapa é resolvida individualmente.</p>
+</section>
+<section id="conclusao">
+<h2>Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">#</a></h2>
+<p>O Pensamento Computacional é uma ferramenta cognitiva que aprimora a capacidade de análise e ação. Sua aplicação transcende a programação, sendo útil em contextos acadêmicos, profissionais e cotidianos. Dominar seus pilares garante maior autonomia na resolução de problemas de qualquer natureza.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Trilha de Aprendizado: Programação</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="algoritmos_desplugados.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Algoritmos Desplugados</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introdução ao Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-que-e-pensamento-computacional">O que é Pensamento Computacional?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beneficios-principais">Benefícios Principais</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pilares-estruturais-do-pensamento-computacional">Pilares Estruturais do Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposicao">1. Decomposição</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reconhecimento-de-padroes">2. Reconhecimento de Padrões</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstracao">3. Abstração</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritmos">4. Algoritmos</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacoes-praticas-do-pensamento-computacional">Aplicações Práticas do Pensamento Computacional</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-1-instrucoes-para-um-robo">Exercício 1: Instruções para um Robô</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-2-identificacao-de-padroes">Exercício 2: Identificação de Padrões</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-3-divisao-de-tarefas-complexas">Exercício 3: Divisão de Tarefas Complexas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Future Minds Kids
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
